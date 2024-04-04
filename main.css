@@ -1,6 +1,4 @@
 *{
-    padding: 0;
-    margin: 0;
     color: var(--fontColor);
     font-family: Helvetica;
 }
@@ -45,6 +43,11 @@ li{
     background-color: #00FF00;
 }
 
+.dark-theme{
+    color: #00FF00;
+    background-color: #000;
+}
+
 
 /* Criando váriaveis de cor */
 :root{
@@ -71,12 +74,13 @@ li{
 .btn{
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    cursor: pointer;
 }
 
 .btn {
-    position: relative;
+    position: absolute;
     top: 20px;
-    left: 250px;
+    right: 82px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
