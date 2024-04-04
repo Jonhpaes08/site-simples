@@ -1,9 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    color: var(--fontColor);
+    font-family: Helvetica;
 }
 
 body {
+    background-color: var(--bg);
     display: grid;
     font-family: monospace;
     align-content: center;
@@ -29,11 +32,31 @@ li{
     list-style: square;
 }
 
+/*
+
 #msg{
     font-family: monospace;
 }
 
+*/
+
 .light-theme{
     color: #000;
     background-color: #00FF00;
+}
+
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000;
+}
+
+.light-theme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
 }
