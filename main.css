@@ -78,7 +78,8 @@ li{
 }
 
 .btn {
-    position: absolute;
+    display: grid;
+    position: sticky;
     top: 20px;
     right: 82px;
     height: 50px;
@@ -87,6 +88,9 @@ li{
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    align-content: center;
+    justify-content: center;
+    justify-items: end;
 }
 
 .btn:focus{
